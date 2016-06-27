@@ -137,7 +137,7 @@ $(function(){
 				//console.log(activeQuestion);
 		} ;
 		findQuestion(activeQuestion);
-		findReponse();
+	//	findReponse();
 		$(divReponses).removeClass('rouge vert');
 
 	});
