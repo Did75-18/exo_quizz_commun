@@ -118,7 +118,7 @@ $(function(){
 						
 						if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
 
-							alert('vous avez déjà cliqué');
+							alert('Votre choix est déjà fait ;o)');
 							
 						}else{
 
@@ -133,7 +133,7 @@ $(function(){
 					}else{
 
 						if (choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1) {
-							alert('vous avez déjà cliqué');
+							alert('Votre choix est déjà fait ;o)');
 							
 						}else{
 
@@ -154,7 +154,7 @@ $(function(){
 			if (contenuDiv2 == questions[activeQuestion].bonneReponse) {
 
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('vous avez déjà cliqué');
+					alert('Votre choix est déjà fait ;o)');
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv2,'vert');
 					choixUtilisateur.addClass('vert');
@@ -166,7 +166,7 @@ $(function(){
 						
 			}else {
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('vous avez déjà cliqué');
+					alert('Votre choix est déjà fait ;o)');
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv2,'rouge');
 					choixUtilisateur.addClass('rouge');
@@ -183,7 +183,7 @@ $(function(){
 			if (contenuDiv3 == questions[activeQuestion].bonneReponse) {
 
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('vous avez déjà cliqué');
+					alert('Votre choix est déjà fait ;o)');
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv3,'vert');
 					choixUtilisateur.addClass('vert');
@@ -193,7 +193,7 @@ $(function(){
 				};
 			}else {
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('vous avez déjà cliqué');
+					alert('Votre choix est déjà fait ;o)');
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv3,'rouge');
 					choixUtilisateur.addClass('rouge');
@@ -210,7 +210,7 @@ $(function(){
 			if (contenuDiv4 == questions[activeQuestion].bonneReponse) {
 
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('vous avez déjà cliqué');
+					alert('Votre choix est déjà fait ;o)');
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv4,'vert');
 					choixUtilisateur.addClass('vert');
@@ -222,7 +222,7 @@ $(function(){
 						
 			}else {
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('vous avez déjà cliqué');
+					alert('Votre choix est déjà fait ;o)');
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv4,'rouge');
 					choixUtilisateur.addClass('rouge');
