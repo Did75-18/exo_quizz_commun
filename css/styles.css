@@ -12,3 +12,6 @@ body {
 .rouge{
 	background-color: red;
 }
+#points{
+	margin-top: 2rem;
+}
