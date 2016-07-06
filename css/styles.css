@@ -14,4 +14,12 @@ body {
 }
 #points{
 	margin-top: 2rem;
+	color: red;
+	font-size: 2rem;
+	font-weight: bold;
+}
+#messages{
+	color: red;
+	font-size: 1.5rem;
+	font-weight: bold;
 }

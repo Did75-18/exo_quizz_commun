@@ -118,7 +118,8 @@ $(function(){
 						
 						if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
 
-							alert('Votre choix est déjà fait ;o)');
+							
+							$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
 							
 						}else{
 
@@ -133,7 +134,8 @@ $(function(){
 					}else{
 
 						if (choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1) {
-							alert('Votre choix est déjà fait ;o)');
+							
+							$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
 							
 						}else{
 
@@ -150,11 +152,15 @@ $(function(){
 		var choixUtilisateur = $(event.target);
 		var tabReponses = questions[activeQuestion].reponsesUtilisateur;
 		var contenuDiv2 = $('#rep2').text();
+		
+		
 
 			if (contenuDiv2 == questions[activeQuestion].bonneReponse) {
 
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('Votre choix est déjà fait ;o)');
+				
+					$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
+					
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv2,'vert');
 					choixUtilisateur.addClass('vert');
@@ -166,7 +172,9 @@ $(function(){
 						
 			}else {
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('Votre choix est déjà fait ;o)');
+
+					$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
+					
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv2,'rouge');
 					choixUtilisateur.addClass('rouge');
@@ -183,7 +191,9 @@ $(function(){
 			if (contenuDiv3 == questions[activeQuestion].bonneReponse) {
 
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('Votre choix est déjà fait ;o)');
+
+					$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
+					
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv3,'vert');
 					choixUtilisateur.addClass('vert');
@@ -193,13 +203,15 @@ $(function(){
 				};
 			}else {
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('Votre choix est déjà fait ;o)');
+					
+					$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
+					
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv3,'rouge');
 					choixUtilisateur.addClass('rouge');
 				};	
 			};
-			//console.log(point);
+			
 	});
 
 	$('#rep4').on ("click", function (event) {
@@ -210,7 +222,9 @@ $(function(){
 			if (contenuDiv4 == questions[activeQuestion].bonneReponse) {
 
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('Votre choix est déjà fait ;o)');
+					
+					$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
+							
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv4,'vert');
 					choixUtilisateur.addClass('vert');
@@ -222,7 +236,9 @@ $(function(){
 						
 			}else {
 				if(choixUtilisateur.hasClass('vert') || choixUtilisateur.hasClass('rouge') || tabReponses.length >1){
-					alert('Votre choix est déjà fait ;o)');
+				
+				$('#messages').html('Votre choix est déjà fait,<br/> cliquez sur suivant pour continuer');
+				
 				}else{
 					questions[activeQuestion].reponsesUtilisateur.push(contenuDiv4,'rouge');
 					choixUtilisateur.addClass('rouge');
@@ -237,14 +253,16 @@ $(function(){
 
 		var divReponsesId = ['#rep1', '#rep2', '#rep3', '#rep4'];
 		
+		$('#messages').html('');
 			
 		if(questions[activeQuestion].reponsesUtilisateur.length == 0){
 			
-				alert('Merci de choisir une réponse');
+				$('#messages').html('Merci de choisir une réponse');
 				
 		}else if(activeQuestion >= 9){
 		
-					alert('Le jeu est terminé');
+			
+					$('#messages').html('Le jeu est terminé');
 					
 				
 		}else if (activeQuestion < 10) {
@@ -263,8 +281,8 @@ $(function(){
 
 		findQuestion(activeQuestion);
 		point;
-	//	console.log(point);
-		$("#points").html('Vous avez ' + point + ' points');
+
+		$("#points").html('Vous avez ' + point + ' point(s)');
 
 	});
 	
@@ -274,9 +292,11 @@ $(function(){
 
 	  var divReponsesId = ['#rep1', '#rep2', '#rep3', '#rep4'];	
 	  
+	  $('#messages').html('');
+	  
 	  if(questions[activeQuestion].reponsesUtilisateur.length == 0){
 			
-				alert('Merci de choisir une réponse');
+				$('#messages').html('Merci de choisir une réponse');
 				
 		}else if (activeQuestion > 0) {
 			
@@ -300,6 +320,4 @@ $(function(){
 
 	});
 	
-
-
 });
