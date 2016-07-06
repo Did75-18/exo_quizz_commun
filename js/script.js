@@ -264,7 +264,7 @@ $(function(){
 		findQuestion(activeQuestion);
 		point;
 	//	console.log(point);
-		$("#points").html('vous avez ' + point + ' points');
+		$("#points").html('Vous avez ' + point + ' points');
 
 	});
 	
